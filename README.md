@@ -46,7 +46,7 @@ PLANNED
 Pi camera -> Python/OpenCV perception -> C++ controller -> motors/pump
 ```
 
-The perception interface is documented in [`docs/camera-frame-interface.md`](docs/camera-frame-interface.md).
+The perception interface is documented in [`docs/camera-frame-interface.md`](docs/camera-frame-interface.md). The staged physical build and purchasing plan is in [`docs/hardware-bom.md`](docs/hardware-bom.md).
 
 ## AprilTag scheme
 
