@@ -1,0 +1,32 @@
+frame,valid,path_visible,path_offset,obstacle,bumper,tag_id,tag_angle_deg,tag_distance_m,tag_confidence
+# 1: centered route, no tag
+1,true,true,0.00,false,false,-1,0,0,0
+# 2: route bends left
+2,true,true,-0.35,false,false,-1,0,0,0
+# 3: wrong plant is visible, so continue using route
+3,true,true,0.00,false,false,1,0,0.8,0.99
+# 4: target plant is left and far
+4,true,true,0.00,false,false,2,-18,1.2,0.99
+# 5: target plant is right and far
+5,true,true,0.00,false,false,2,20,1.0,0.99
+# 6: target is centered but still far
+6,true,true,0.00,false,false,2,2,0.8,0.99
+# 7: target is centered and close enough to stop
+7,true,true,0.00,false,false,2,1,0.25,0.99
+# 8: boundary overrides a simultaneously visible target
+8,true,true,0.00,false,false,2,0,0.25,0.99
+8,true,true,0.00,false,false,900,5,0.70,0.95
+# 9: camera reports an obstacle
+9,true,true,0.00,true,false,-1,0,0,0
+# 10: physical bumper is pressed
+10,true,true,0.00,false,true,-1,0,0,0
+# 11: route and target are both lost
+11,true,false,0.00,false,false,-1,0,0,0
+# 12: invalid or stale camera frame
+12,false,true,0.00,false,false,-1,0,0,0
+# 13: target is close but badly misaligned
+13,true,true,0.00,false,false,2,15,0.25,0.99
+# 14: weak boundary detection is ignored
+14,true,true,0.00,false,false,900,0,0.70,0.20
+# 15: unknown tag is ignored
+15,true,true,0.00,false,false,700,0,0.70,0.99

@@ -1,0 +1,15 @@
+# Compiled binaries
+rover_sim
+controller_tests
+simulation_io_tests
+tests
+
+# Build directories
+build/
+cmake-build-*/
+
+# Editor and OS files
+.DS_Store
+.vscode/
+.idea/
+*.swp
